@@ -60,7 +60,7 @@ String getVersionSuffix() {
 void auditTools() {
   sh '''
     git version
-    docker version
+    docker --version
     node --version
     npm version
   '''
