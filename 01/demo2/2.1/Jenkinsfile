@@ -1,0 +1,13 @@
+library identifier: 'jenkins-sessions-library@main'
+
+pipeline {
+  agent any
+
+  stages {
+    stage('Audit tools') {
+      steps {
+        auditTools()
+      }
+    }
+  }
+}
