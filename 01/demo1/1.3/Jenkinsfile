@@ -11,9 +11,9 @@ pipeline  {
   }
 
   stages {
-stage('Audit tools') {
+    stage('Audit tools') {
       steps {
-          auditTools()
+        auditTools()
       }
     }
     stage('Build') {
