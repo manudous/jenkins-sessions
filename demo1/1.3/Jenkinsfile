@@ -50,26 +50,3 @@ pipeline {
         }
     }
 }
-Volver a http://localhost:8080
-
-Copy item, demo1-1.3 from demo1-1.2
-Path to Jenkinsfile demo1/1.3/Jenkinsfile
-Walk through the Jenkinsfile
-
-parallel {
-    stage('linux-arm64') {
-        steps {
-            echo "Building release ${RELEASE} for ${STAGE_NAME} with log level ${LOG_LEVEL}..."
-        }
-    }
-    stage('linux-amd64') {
-        steps {
-            echo "Building release ${RELEASE} for ${STAGE_NAME} with log level ${LOG_LEVEL}..."
-        }
-    }
-    stage('windows-amd64') {
-        steps {
-            echo "Building release ${RELEASE} for ${STAGE_NAME} with log level ${LOG_LEVEL}..."
-        }
-    }
-}
